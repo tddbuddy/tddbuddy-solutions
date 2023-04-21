@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalancedBrackets", "BalancedBrackets\BalancedBrackets.csproj", "{C8FA7985-883D-49D0-BF5E-917AE02C33F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalancedBrackets.Tests", "BalancedBrackets.Tests\BalancedBrackets.Tests.csproj", "{D4D8CEFB-1329-4085-9CDB-DF118D8E51A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8FA7985-883D-49D0-BF5E-917AE02C33F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8FA7985-883D-49D0-BF5E-917AE02C33F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8FA7985-883D-49D0-BF5E-917AE02C33F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8FA7985-883D-49D0-BF5E-917AE02C33F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D8CEFB-1329-4085-9CDB-DF118D8E51A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D8CEFB-1329-4085-9CDB-DF118D8E51A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D8CEFB-1329-4085-9CDB-DF118D8E51A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D8CEFB-1329-4085-9CDB-DF118D8E51A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {873F7FE1-5820-45E5-AC0A-985513DE84D9}
+	EndGlobalSection
+EndGlobal
