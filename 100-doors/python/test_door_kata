@@ -1,5 +1,14 @@
 import pytest
-from door_kata import DoorKata  # Assuming the class is in door_kata.py
+from door_kata import DoorKata 
+
+# To ensure the best coverage with as few tests as possible, you will want to follow boundaries and equivalence partitions.
+# Consider these partitions:
+#
+# Doors that are perfect squares, as they will be open after the 100 passes.
+# Doors that are not perfect squares, as they will be closed after the 100 passes.
+#
+# You can choose representative doors from these partitions and test the boundaries for more thorough test coverage.
+# For example, door 1 is a boundary case for perfect squares, and door 2 is a boundary case for non-perfect squares.
 
 def test_perfect_square_boundary_doors_1_and_4():
     dk = DoorKata()
