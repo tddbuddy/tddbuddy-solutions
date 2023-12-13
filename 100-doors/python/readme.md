@@ -1,8 +1,4 @@
-# Project Title
-
-Brief description of your project.
-
-## Setup and Running Tests
+# 100 doors in python 
 
 ### Installing Dependencies
 
