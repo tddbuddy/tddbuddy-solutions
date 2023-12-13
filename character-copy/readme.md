@@ -28,5 +28,5 @@ Create a `Copier` class that interacts with `ISource` and `IDestination` interfa
 
 ### Note
 - Only the `Copier` class should be a concrete class.
-- `ISource` and `IDestination` should be implemented using NSubstitute for testing purposes.
+- `ISource` and `IDestination` should be implemented using a mocking framework.
 
