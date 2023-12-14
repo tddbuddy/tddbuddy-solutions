@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1705.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpValidator", "IpValidator.csproj", "{AE0DD685-A53A-4C71-8BB9-93072DF40872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IpValidator.Tests", "..\IpValidator.Tests\IpValidator.Tests.csproj", "{32B1FD8C-D1AA-4219-8E67-97572B1907FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE0DD685-A53A-4C71-8BB9-93072DF40872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0DD685-A53A-4C71-8BB9-93072DF40872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0DD685-A53A-4C71-8BB9-93072DF40872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0DD685-A53A-4C71-8BB9-93072DF40872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32B1FD8C-D1AA-4219-8E67-97572B1907FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32B1FD8C-D1AA-4219-8E67-97572B1907FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32B1FD8C-D1AA-4219-8E67-97572B1907FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32B1FD8C-D1AA-4219-8E67-97572B1907FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C102775-F784-44E5-9B05-C80470C1BE81}
+	EndGlobalSection
+EndGlobal
