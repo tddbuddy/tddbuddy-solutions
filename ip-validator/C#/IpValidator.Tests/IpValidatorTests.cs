@@ -23,7 +23,7 @@ namespace IpValidationKata.Tests
             var result = validator.ValidateIpv4Address(ipAddress);
 
             // Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
 
         [TestCase("256.1.1.1", false)]
@@ -38,7 +38,7 @@ namespace IpValidationKata.Tests
             var result = validator.ValidateIpv4Address(ipAddress);
 
             // Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
 
         [TestCase("01.1.1.1", false)]
@@ -53,7 +53,7 @@ namespace IpValidationKata.Tests
             var result = validator.ValidateIpv4Address(ipAddress);
 
             // Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
 
         [TestCase("192.168.1.0", false)]
@@ -68,7 +68,7 @@ namespace IpValidationKata.Tests
             var result = validator.ValidateIpv4Address(ipAddress);
 
             // Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
 
         [TestCase(null, false)]
@@ -86,7 +86,7 @@ namespace IpValidationKata.Tests
             var result = validator.ValidateIpv4Address(ipAddress);
 
             // Assert
-            Assert.AreEqual(expectedResult, result);
+            Assert.That(result, Is.EqualTo(expectedResult));
         }
     }
 }
