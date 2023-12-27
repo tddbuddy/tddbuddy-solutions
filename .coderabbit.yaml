@@ -18,7 +18,7 @@ reviews:
         "Evaluate C# unit tests using NUnit. Ensure that:
         - Tests are structured and written in accordance with NUnit best practices.
         - Test cases are comprehensive and cover a wide range of scenarios."
-        - Test names follow the given_when_then convention
+        - Test names follow the methodname_when_expect convention (given_when_then adaptation)
     - path: "**/*.py"
       instructions: |
         "Examine Python code for PEP 8 compliance, with emphasis on:
@@ -29,7 +29,7 @@ reviews:
         "Assess Python unit tests using PyTest. Confirm that:
         - Tests are aligned with PyTest guidelines and practices.
         - Test descriptions and assertions are clear, providing good coverage and context."
-        - Test names folloow the given_when_then convention 
+        - Test names folloow the methodname_when_expect convention (given_when_then adaptation) 
     - path: "**/*.js"
       instructions: "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations."
   auto_review:
