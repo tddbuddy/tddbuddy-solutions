@@ -1,0 +1,46 @@
+language: "en"
+early_access: false
+reviews:
+  request_changes_workflow: true
+  high_level_summary: true
+  poem: false
+  review_status: true
+  collapse_walkthrough: false
+  path_filters:
+    - "!**/.xml"
+  path_instructions:
+    - path: "**/*.cs"
+      instructions: "Review the C# code according to .NET coding conventions. Focus on:
+        - Code readability and maintainability.
+        - Adherence to C# best practices and .NET framework guidelines."
+    - path: "tests/**/*.cs"
+      instructions: |
+        "Evaluate C# unit tests using NUnit. Ensure that:
+        - Tests are structured and written in accordance with NUnit best practices.
+        - Test cases are comprehensive and cover a wide range of scenarios."
+        - Test names follow the given_when_then convention
+    - path: "**/*.py"
+      instructions: |
+        "Examine Python code for PEP 8 compliance, with emphasis on:
+        - Code formatting and style consistency.
+        - Effective use of Python idioms and best practices."
+    - path: "tests/**/*.py"
+      instructions: |
+        "Assess Python unit tests using PyTest. Confirm that:
+        - Tests are aligned with PyTest guidelines and practices.
+        - Test descriptions and assertions are clear, providing good coverage and context."
+        - Test names folloow the given_when_then convention 
+    - path: "**/*.js"
+      instructions: "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations."
+  auto_review:
+    enabled: true
+    ignore_title_keywords:
+      - "WIP"
+      - "DO NOT MERGE"
+    drafts: false
+    base_branches:
+      - "develop"
+      - "feat/*"
+chat:
+  auto_reply: true
+
