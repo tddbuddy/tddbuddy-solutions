@@ -29,7 +29,7 @@ reviews:
         "Assess Python unit tests using PyTest. Confirm that:
         - Tests are aligned with PyTest guidelines and practices.
         - Test descriptions and assertions are clear, providing good coverage and context."
-        - Test names folloow the methodname_when_expect convention (given_when_then adaptation) 
+        - Test names follow the methodname_when_expect convention (given_when_then adaptation) 
     - path: "**/*.js"
       instructions: "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations."
   auto_review:
