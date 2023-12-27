@@ -1,6 +1,10 @@
 from datetime import datetime, timedelta
 
 def last_sunday(year):
+    # Check if the input is an integer
+    if not isinstance(year, int):
+        raise ValueError("The year must be an integer.")
+
     last_sundays = []
     for month in range(1, 13):
         if month == 12:
