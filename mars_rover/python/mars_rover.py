@@ -28,8 +28,6 @@ class MarsRover:
 
     def execute_commands(self, commands):
         for command in commands:
-            print("***** " + self.direction+  " " + str(self.x) + ", " + str(self.y))
-
             if command == 'f':
                 self.move_forward()
             elif command == 'b':
@@ -38,6 +36,8 @@ class MarsRover:
                 self.turn_left()
             elif command == 'r':
                 self.turn_right()
+            else:
+                raise ValueError(f"Unknown command {command}")
         
 
     def current_location(self):

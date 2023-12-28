@@ -48,9 +48,11 @@ def test_invalid_start_direction():
 
 def test_invalid_commands():
     rover = MarsRover([0, 0], 'S', [100, 100])
-    rover.execute_commands('fxgx')
-    assert rover.current_location() == (0, 1)  # 'x' 'g' are ignored
-    
+    with pytest.raises(ValueError) as excinfo:
+        rover.execute_commands('fxgx')
+
+    assert "Unknown command" in str(excinfo.value)
+
 def test_full_rotation():
     rover = MarsRover([0, 0], 'N', [100, 100])
     rover.execute_commands('llll')
