@@ -41,7 +41,7 @@ The aim is to develop a method that converts numeric figures into spelled-out wo
 
 Start by solving for one-digit numbers, then progress to two digits, and so on.
 
-## Bonus Rule for Four-Digit Numbers
+## Bonus
 
 For four-digit numbers, opt for simplicity in expression. For instance, instead of spelling out 5300 as "five thousand three hundred", it should be "fifty-three hundred". This simplicity rule applies exclusively to four-digit numbers.
 
