@@ -10,28 +10,15 @@ reviews:
     - "!**/.xml"
   path_instructions:
     - path: "**/*.cs"
-      instructions: "Review the C# code according to .NET coding conventions. Focus on:
-        - Code readability and maintainability.
-        - Adherence to C# best practices and .NET framework guidelines."
+      instructions: "Focus on major issues impacting readability and maintainability. Avoid minor nitpicks."
     - path: "tests/**/*.cs"
-      instructions: |
-        "Evaluate C# unit tests using NUnit. Ensure that:
-        - Tests are structured and written in accordance with NUnit best practices.
-        - Test cases are comprehensive and cover a wide range of scenarios."
-        - Test names follow the methodname_when_expect convention (given_when_then adaptation)
+      instructions: "Review NUnit tests for structure and coverage. Skip minor stylistic concerns."
     - path: "**/*.py"
-      instructions: |
-        "Examine Python code for PEP 8 compliance, with emphasis on:
-        - Code formatting and style consistency.
-        - Effective use of Python idioms and best practices."
+      instructions: "Check for major PEP 8 violations and Python best practices. Ignore trivial formatting issues."
     - path: "tests/**/*.py"
-      instructions: |
-        "Assess Python unit tests using PyTest. Confirm that:
-        - Tests are aligned with PyTest guidelines and practices.
-        - Test descriptions and assertions are clear, providing good coverage and context."
-        - Test names follow the methodname_when_expect convention (given_when_then adaptation) 
+      instructions: "Ensure PyTest tests are clear and comprehensive. Don't focus on minor details."
     - path: "**/*.js"
-      instructions: "Review the JavaScript code for conformity with the Google JavaScript style guide, highlighting any deviations."
+      instructions: "Review for significant deviations from Google JavaScript style guide. Minor style issues are not a priority."
   auto_review:
     enabled: true
     ignore_title_keywords:
@@ -43,4 +30,3 @@ reviews:
       - "feat/*"
 chat:
   auto_reply: true
-
