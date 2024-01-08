@@ -23,11 +23,19 @@ def parse_url(url):
     # Handling subdomain and port
     if ':' in domain_and_port:
         domain_and_port, port = domain_and_port.split(':')
-    if '.' in domain_and_port:
-        parts = domain_and_port.split('.')
-        domain = parts[-2] + '.' + parts[-1]
-        if len(parts) > 2:
-            subdomain = '.'.join(parts[:-2])
+
+    # Splitting domain and subdomain
+    domain_parts = domain_and_port.split('.')
+    if len(domain_parts) == 1:
+        # Case for 'localhost' or similar
+        domain = domain_parts[0]
+    elif len(domain_parts) == 2:
+        # Regular domain with TLD
+        domain = '.'.join(domain_parts)
+    else:
+        # Domain with subdomain and TLD
+        domain = '.'.join(domain_parts[-2:])
+        subdomain = '.'.join(domain_parts[:-2])
 
     return {
         'protocol': protocol,
